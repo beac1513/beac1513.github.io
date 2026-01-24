@@ -1,0 +1,72 @@
+nav {
+    background-color: #4a4a4a;
+    border-radius: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 30px;
+}
+
+nav li {
+    margin: 0;
+    border-radius: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px 25px;
+    display: block;
+    transition: background-color 0.2s;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: #5a5a5a;
+}
+
+nav a.active {
+    background-color: #3a3a3a;
+}
+
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    flex-direction: column;
+    background: #00A759;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}

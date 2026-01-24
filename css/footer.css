@@ -1,0 +1,94 @@
+footer {
+    background: #4a4a4a;
+    color: #ccc;
+    margin-top: 50px;
+    padding: 30px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+footer strong {
+    color: white;
+}
+
+.changelog {
+    background: #3a3a3a;
+    padding: 20px;
+    margin-top: 25px;
+    border-left: 4px solid #00A759;
+}
+
+.changelog h3 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.changelog-item {
+    border-radius: 4px;
+    margin: 8px 0;
+    overflow: hidden;
+}
+
+.changelog-accordion {
+    cursor: pointer;
+    padding: 12px;
+    background-color: #00A759;
+    transition: background-color 0.3s;
+}
+
+.changelog-accordion:hover {
+    background-color: #018849;
+}
+
+.changelog-accordion.active {
+    background-color: #00A759;
+}
+
+.changelog-header {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.changelog-header::after {
+    content: '+';
+    font-size: 1.3em;
+}
+
+.changelog-accordion.active .changelog-header::after {
+    content: '−';
+}
+
+.changelog-content {
+    background-color: white;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.changelog-content.show {
+    padding: 10px 40px;
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.changelog-content ul {
+    margin: 10px 0 10px 20px;
+    color: #333;
+}
+
+.changelog-content li {
+    margin-bottom: 5px;
+}

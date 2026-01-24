@@ -1,0 +1,42 @@
+h3 {
+    color: #000000;
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+h4 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+a {
+    color: #00A759;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #01bc65;
+    text-decoration: underline;
+}
+
+ul {
+    margin: 15px 0 20px 25px;
+    color: #444;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
