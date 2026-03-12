@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <meta name="description" content="Pour en savoir plus sur la technique mlabdpforlsjhew">
     <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
     <div id="header"></div>
 
@@ -16,7 +18,12 @@
             <h2>À propos</h2>
         </div>
     </div>
-
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li aria-current="page">À propos</li>
+        </ul>
+    </nav>
     <div class="container">
         <main>
             <section>
@@ -26,29 +33,33 @@
 
             <section>
                 <h3>Informations</h3>
-                
+
                 <div class="contact-info">
                     <div class="contact-card">
-                        <img src="/icons/female.png" alt="Université de Sherbrooke"><h4>Étudiante</h4>
+                        <img src="/icons/female.png" alt="Icône d'une silhouette d féminine">
+                        <h4>Étudiante</h4>
                         <p><strong>Christina Beauchesne</strong></p>
                         <p>CIP : beac1513</p>
                     </div>
 
                     <div class="contact-card">
-                        <img src="/icons/school.png" alt="Université de Sherbrooke"><h4>Institution</h4>
+                        <img src="/icons/school.png" alt="Icône représentant un établissement">
+                        <h4>Institution</h4>
                         <p><strong>Université de Sherbrooke</strong></p>
                         <p>Département d'informatique</p>
                         <p>Faculté des sciences</p>
                     </div>
 
                     <div class="contact-card">
-                        <img src="/icons/open-book.png" alt="Université de Sherbrooke"><h4>Cours</h4>
+                        <img src="/icons/open-book.png" alt="Icône de livre">
+                        <h4>Cours</h4>
                         <p><strong>IGE511</strong></p>
                         <p>Aspects informatiques du commerce</p>
                     </div>
 
                     <div class="contact-card">
-                        <img src="/icons/link.png" alt="Université de Sherbrooke"><h4>Liens</h4>
+                        <img src="/icons/link.png" alt="Icône représentant un lien">
+                        <h4>Liens</h4>
                         <p><a href="https://github.com/beac1513" target="_blank">GitHub</a></p>
                         <p><a href="https://www.usherbrooke.ca" target="_blank">Site de l'UdeS</a></p>
                     </div>
@@ -83,4 +94,5 @@
         loadLayout();
     </script>
 </body>
+
 </html>

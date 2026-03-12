@@ -2,7 +2,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 50vh; 
+    min-height: 50vh;
     height: 50vh;
     display: flex;
     align-items: center;
@@ -67,14 +67,14 @@
     margin: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     color: #555;
 }
 
-.accordion h4 > div {
+.accordion h4>div {
     display: flex;
-    align-items: baseline; 
-    gap: 1px; 
+    align-items: baseline;
+    gap: 1px;
 }
 
 .accordion.active h4 {
@@ -86,7 +86,7 @@
     font-size: 1.5em;
     font-weight: bold;
     color: #555;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .accordion.active h4::after {
@@ -97,7 +97,7 @@
 .acrostiche-letter {
     color: #00A759;
     font-weight: bold;
-    font-size: 1.25em; 
+    font-size: 1.25em;
     line-height: 1;
 }
 
@@ -268,9 +268,63 @@
     .contact-info {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-card img {
         width: 30px;
         height: 30px;
     }
+}
+
+.breadcrumb {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 40px;
+    background-color: transparent;
+}
+
+.breadcrumb ul {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    gap: 25px;
+}
+
+.breadcrumb li+li::before {
+    content: '›';
+    margin-right: 10px;
+    color: #00A759;
+}
+
+.breadcrumb a {
+    padding: 0;
+    color: #555;
+}
+
+.breadcrumb a:hover {
+    padding: 0;
+    background-color: transparent;
+}
+
+.breadcrumb li[aria-current="page"] {
+    color: #00A759;
+    font-weight: 500;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }

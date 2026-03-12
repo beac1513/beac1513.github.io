@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,28 @@
     <meta name="description" content="Ressources et guides SEO">
     <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
     <div id="header"></div>
 
-     <div class="hero" style="background-image: url('/images/ressources.jpg');">
+    <div class="hero" style="background-image: url('/images/ressources.jpg');">
         <div class="hero-content">
             <h2>Ressources SEO</h2>
             <p>Les ressources qui fondent ce site internet</p>
         </div>
     </div>
-
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li aria-current="page">Ressources</li>
+        </ul>
+    </nav>
     <div class="container">
         <main>
             <section>
                 <h3>Guides pour débutants</h3>
                 <p>Ces ressources sont idéales pour comprendre les bases du référencement naturel et optimiser votre présence en ligne.</p>
-                
+
                 <div class="resource-item">
                     <h4><a href="https://www.shopify.com/fr/blog/seo-et-referencement-pour-les-debutants#23" target="_blank">SEO et référencement pour les débutants - Shopify</a></h4>
                     <p>Guide complet pour débuter en SEO, couvrant les concepts de base et les meilleures pratiques.</p>
@@ -100,4 +107,5 @@
         loadLayout();
     </script>
 </body>
+
 </html>
