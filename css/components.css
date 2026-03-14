@@ -328,3 +328,24 @@
     height: 100%;
     border: none;
 }
+
+.context {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.context-image {
+    display: block;
+    object-fit: contain;
+    width: 40%;
+    border-radius: 10px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
